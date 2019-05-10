@@ -1,0 +1,10 @@
+$main-color: red;
+
+body {
+  h1 {
+    color: $main-color;
+    font-size: 4rem;
+    text-decoration: underline;
+    border: 2px solid green;
+  }
+}
