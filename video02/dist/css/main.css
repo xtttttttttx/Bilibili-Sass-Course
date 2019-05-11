@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #2ecc71;
+  opacity: 0.8;
+}
+body .card {
+  width: 400px;
+  padding: 2rem 3rem;
+  background: #fff;
+}
+body .card h3 {
+  font-weight: 400;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+body .card form input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+body .card form input:last-child {
+  color: #fff;
+  background: #27ae60;
+  transition: all 0.4s;
+}
+body .card form input:last-child:hover {
+  background: #2ecc71;
+}
+body .card form input:focus {
+  outline: 1px solid #2ecc71;
+}
+body .card ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+body .card ul li a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s;
+}
+body .card ul li a:hover {
+  color: #2ecc71;
+  border-bottom: 1px solid #2ecc71;
+}
+
+/*# sourceMappingURL=main.css.map */
